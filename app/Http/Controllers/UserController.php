@@ -102,6 +102,7 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
+        //ELIMINAR EL USUARIO
         $user->delete();
         return redirect()->route('user.crud.index');
     }
